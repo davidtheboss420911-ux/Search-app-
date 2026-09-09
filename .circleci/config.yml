@@ -9,13 +9,7 @@ jobs:
       - checkout
 
       - run:
-          name: Build Android APK
-          command: ./gradlew assembleDebug
-
-      - store_artifacts:
-          path: app/build/outputs/apk/debug/app-debug.apk
-
-workflows:
-  build:
-    jobs:
-      - build
+          name: Build Android App
+          command: |
+            chmod +x gradlew
+            ./gradlew assembleDebug
