@@ -1,0 +1,9 @@
+YourProject/
+├── .circleci/
+│   └── config.yml
+├── app/
+├── gradle/
+├── build.gradle
+├── settings.gradle
+├── gradlew
+└── gradle.properties
