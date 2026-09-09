@@ -11,7 +11,7 @@ jobs:
           command: ./gradlew assembleDebug
       - store_artifacts:
           path: app/build/outputs/apk/debug/app-debug.apk
-
+command: ./gradlew assembleDebug
 workflows:
   build:
     jobs:
